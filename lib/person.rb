@@ -53,10 +53,10 @@ class Person
         people = [self, friend]
         case topic
         when "politics"
-            people.each {|person| person += 2}
+            people.each {|person| person.happiness -= 2}
             "blah blah partisan blah lobbyist"
         when "weather"
-            people.each{|person| person -= 1}
+            people.each{|person| person.happiness += 1}
             "blah blah sun blah rain"
         else
             "blah blah blah blah blah"
